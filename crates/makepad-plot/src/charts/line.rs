@@ -18,9 +18,9 @@ script_mod! {
         height: Fill
         plot_margin: Inset{left: 52.0, top: 28.0, right: 16.0, bottom: 34.0}
         draw_bg +: { draw_depth: 0.0, color: #xffffff }
-        draw_grid +: { draw_depth: 0.1, color: #xe4e4e4 }
-        draw_vector +: { draw_depth: 2.0 }
-        draw_text +: { draw_depth: 3.0, color: #x333333, text_style: theme.font_regular{} }
+        draw_grid +: { draw_depth: 0.0001, color: #xe4e4e4 }
+        draw_vector +: { draw_depth: 0.0002 }
+        draw_text +: { draw_depth: 0.0003, color: #x333333, text_style: theme.font_regular{} }
     }
 }
 

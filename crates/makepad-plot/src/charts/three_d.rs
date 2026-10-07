@@ -24,9 +24,9 @@ script_mod! {
         show_border: false
         colormap: "Viridis"
         draw_bg +: { draw_depth: 0.0, color: #xffffff }
-        draw_grid +: { draw_depth: 0.1, color: #xe4e4e4 }
-        draw_vector +: { draw_depth: 2.0 }
-        draw_text +: { draw_depth: 3.0, color: #x333333, text_style: theme.font_regular{} }
+        draw_grid +: { draw_depth: 0.0001, color: #xe4e4e4 }
+        draw_vector +: { draw_depth: 0.0002 }
+        draw_text +: { draw_depth: 0.0003, color: #x333333, text_style: theme.font_regular{} }
     }
 
     mod.plot.Scatter3DBase = #(Scatter3D::register_widget(vm))
@@ -40,9 +40,9 @@ script_mod! {
         show_border: false
         colormap: "Viridis"
         draw_bg +: { draw_depth: 0.0, color: #xffffff }
-        draw_grid +: { draw_depth: 0.1, color: #xe4e4e4 }
-        draw_vector +: { draw_depth: 2.0 }
-        draw_text +: { draw_depth: 3.0, color: #x333333, text_style: theme.font_regular{} }
+        draw_grid +: { draw_depth: 0.0001, color: #xe4e4e4 }
+        draw_vector +: { draw_depth: 0.0002 }
+        draw_text +: { draw_depth: 0.0003, color: #x333333, text_style: theme.font_regular{} }
     }
 
     mod.plot.Line3DBase = #(Line3D::register_widget(vm))
@@ -55,9 +55,9 @@ script_mod! {
         show_ticks: false
         show_border: false
         draw_bg +: { draw_depth: 0.0, color: #xffffff }
-        draw_grid +: { draw_depth: 0.1, color: #xe4e4e4 }
-        draw_vector +: { draw_depth: 2.0 }
-        draw_text +: { draw_depth: 3.0, color: #x333333, text_style: theme.font_regular{} }
+        draw_grid +: { draw_depth: 0.0001, color: #xe4e4e4 }
+        draw_vector +: { draw_depth: 0.0002 }
+        draw_text +: { draw_depth: 0.0003, color: #x333333, text_style: theme.font_regular{} }
     }
 }
 

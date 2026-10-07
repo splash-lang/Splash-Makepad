@@ -22,16 +22,19 @@ script_mod! {
         }
 
         draw_grid +: {
-            draw_depth: 0.1
+            // Keep every plot layer inside the paint-order (zbias) band so
+            // chrome drawn after the board wins the depth test; the internal
+            // layering still increases per layer.
+            draw_depth: 0.0001
             color: #xe0e0e0
         }
 
         draw_vector +: {
-            draw_depth: 2.0
+            draw_depth: 0.0002
         }
 
         draw_text +: {
-            draw_depth: 3.0
+            draw_depth: 0.0003
             color: #x333333
             text_style: theme.font_regular{}
         }
